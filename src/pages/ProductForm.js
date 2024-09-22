@@ -56,10 +56,7 @@ const ProductForm = ({ product, onClose }) => {
       <Form.Item
         name="discount"
         label="Discount"
-        rules={[
-          { message: "Please input discount!" },
-          { type: "number", message: "Discount must be a number!" },
-        ]}
+        rules={[{ type: "number", message: "Discount must be a number!" }]}
       >
         <InputNumber
           min={0}
